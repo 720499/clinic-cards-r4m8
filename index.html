@@ -1,0 +1,496 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Разбор карточек сети «Аквилио» — Яндекс Карты и ПроДокторов</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><style>
+  :root{
+    --c-text:#1A1A1A; --c-body:#2C2C2C; --c-muted:#666666;
+    --c-bg:#FFFFFF; --c-accent:#0B1F3A; --c-hairline:#E5E5E5;
+    --c-rule:#CCCCCC; --c-ctx:#F7F7F7;
+    --c-red:#B23A2E; --c-redbg:#FBF2F0; --c-amber:#B5781F; --c-green:#2E6B3E;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--c-bg); color:var(--c-body);
+    font-family:'PT Sans',sans-serif; font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 24px;}
+  h1,h2,h3{font-family:'PT Serif',serif; color:var(--c-text); font-weight:700; letter-spacing:-0.01em;}
+  h1{font-size:34px; line-height:1.18; margin:0 0 14px;}
+  h2{font-size:25px; line-height:1.25; margin:0 0 6px;}
+  h3{font-size:18px; margin:0 0 6px;}
+  p{margin:0 0 14px;}
+  a{color:var(--c-accent); text-decoration:none; border-bottom:1px solid rgba(11,31,58,.25);}
+  a:hover{border-bottom-color:var(--c-accent);}
+  .muted{color:var(--c-muted);}
+  .eyebrow{font-family:'PT Sans',sans-serif; font-weight:700; font-size:12px; text-transform:uppercase;
+    letter-spacing:0.14em; color:var(--c-accent); margin:0 0 12px;}
+  header.hero{padding:60px 0 38px; border-bottom:1px solid var(--c-rule);}
+  .hero .meta{font-size:15px; color:var(--c-muted); margin:0;}
+  .hero .lead{font-size:18px; color:var(--c-body); margin:18px 0 0; max-width:740px;}
+  .hero .stamp{display:inline-block; margin-top:22px; font-size:14px; color:var(--c-muted);
+    border-left:2px solid var(--c-accent); padding:4px 0 4px 14px;}
+  section{padding:40px 0; border-bottom:1px solid var(--c-hairline);}
+  section:last-of-type{border-bottom:none;}
+  .lead-p{font-size:17px; color:var(--c-body); margin:0 0 22px; max-width:740px;}
+  /* KPI bar */
+  .kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:6px 0 4px;}
+  .kpi{border:1px solid var(--c-hairline); border-radius:6px; padding:16px 18px;}
+  .kpi .big{font-family:'PT Serif',serif; font-weight:700; color:var(--c-accent); font-size:26px; line-height:1.1;}
+  .kpi .lbl{font-size:13px; color:var(--c-muted); text-transform:uppercase; letter-spacing:.05em; margin:6px 0 0;}
+  /* tables */
+  .tablewrap{overflow-x:auto; margin:0 -2px;}
+  table{width:100%; border-collapse:collapse; font-size:15px; min-width:560px;}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--c-hairline); vertical-align:top;}
+  th{font-family:'PT Sans',sans-serif; font-weight:700; color:var(--c-text); font-size:12px;
+    text-transform:uppercase; letter-spacing:0.07em; border-bottom:1.5px solid var(--c-rule);}
+  td.num{white-space:nowrap; font-weight:700; color:var(--c-text);}
+  tr.ours{background:#F4EFE6;}
+  tr.ours td{font-weight:700;}
+  tr.leader td.lead-cell{color:var(--c-accent); font-weight:700;}
+  .srcnote{font-size:13px; color:var(--c-muted); margin-top:8px;}
+  /* checklist */
+  ul.check{list-style:none; margin:6px 0 0; padding:0;}
+  ul.check li{padding:13px 0; border-bottom:1px solid var(--c-hairline); display:flex; gap:14px; align-items:baseline;}
+  ul.check li:last-child{border-bottom:none;}
+  ul.check .ci{flex:1;} ul.check .ci b{color:var(--c-text);} ul.check .ci .note{color:var(--c-muted); font-size:14px;}
+  .chip{display:inline-block; font-family:'PT Sans',sans-serif; font-weight:700; font-size:12px;
+    padding:2px 9px; border-radius:11px; white-space:nowrap; background:#EEF1F4; color:var(--c-muted); min-width:96px; text-align:center;}
+  .chip.ok{background:#EDF4EE; color:var(--c-green);}
+  .chip.no{background:var(--c-redbg); color:var(--c-red);}
+  .chip.part{background:#FBF6EC; color:var(--c-amber);}
+  /* red bottleneck block */
+  .danger{background:var(--c-redbg); border-left:3px solid var(--c-red); padding:22px 24px; margin:16px 0 0; border-radius:0 4px 4px 0;}
+  .danger .eyebrow{color:var(--c-red);} .danger h3{color:var(--c-red); margin-top:0;}
+  .danger ul{margin:8px 0 0; padding-left:18px;} .danger li{margin:0 0 7px;} .danger li:last-child{margin-bottom:0;}
+  .ctx{background:var(--c-ctx); border-left:3px solid var(--c-accent); padding:22px 24px; margin:16px 0 0;}
+  .ctx h2,.ctx h3{margin-top:0;} .ctx p:last-child{margin-bottom:0;}
+  /* screenshots */
+  .shot{margin:14px 0 6px;}
+  .shot img{width:100%; height:auto; display:block; border:1px solid var(--c-hairline); border-radius:6px;}
+  .shot figcaption{font-size:13px; color:var(--c-muted); margin-top:8px;}
+  .pair{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:14px 0 6px;}
+  .pair figure{margin:0;}
+  .pair img{width:100%; height:auto; display:block; border:1px solid var(--c-hairline); border-radius:6px;}
+  .pair figcaption{font-size:13px; color:var(--c-muted); margin-top:8px;}
+  .mob{display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:560px; margin:14px 0 6px;}
+  .mob figure{margin:0;}
+  .mob img{width:100%; height:auto; display:block; border:1px solid var(--c-hairline); border-radius:6px;}
+  .mob figcaption{font-size:13px; color:var(--c-muted); margin-top:8px;}
+  /* 730 estimate band */
+  .scoreband{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin:6px 0 4px;}
+  .scoreband .num{font-family:'PT Serif',serif; font-weight:700; color:var(--c-accent); font-size:38px; line-height:1;}
+  .scoreband .of{font-size:18px; color:var(--c-muted);}
+  .scoreband .tag{font-size:13px; color:var(--c-muted); background:#EEF1F4; padding:3px 10px; border-radius:11px;}
+  .scoretrack{height:14px; background:#EEF1F4; border-radius:7px; overflow:hidden; margin:14px 0 4px; position:relative;}
+  .scoretrack .sure{position:absolute; left:0; top:0; bottom:0; background:var(--c-accent);}
+  .scoretrack .band{position:absolute; top:0; bottom:0; background:rgba(11,31,58,.28);}
+  .basis{font-family:'PT Sans',sans-serif; font-weight:700; font-size:11px; padding:2px 8px; border-radius:10px; white-space:nowrap;}
+  .basis.sure{background:#EDF4EE; color:var(--c-green);}
+  .basis.est{background:#FBF6EC; color:var(--c-amber);}
+  .basis.lk{background:var(--c-redbg); color:var(--c-red);}
+  /* educational list */
+  ul.edu{list-style:none; margin:6px 0 0; padding:0;}
+  ul.edu li{padding:13px 0; border-bottom:1px solid var(--c-hairline);}
+  ul.edu li:last-child{border-bottom:none;}
+  ul.edu .et{font-family:'PT Serif',serif; font-weight:700; color:var(--c-text); font-size:16px; margin:0 0 3px;}
+  ul.edu .ed{font-size:15px; color:var(--c-body); margin:0;} ul.edu .ed b{color:var(--c-text);}
+  /* CTA */
+  .cta{background:var(--c-accent); color:#fff; border-radius:8px; padding:30px 28px; margin:16px 0 0;}
+  .cta h2{color:#fff; margin:0 0 8px;}
+  .cta p{color:#E7ECF2; margin:0 0 18px; max-width:640px;}
+  .cta a.btn{display:inline-block; background:#fff; color:var(--c-accent); font-family:'PT Sans',sans-serif;
+    font-weight:700; font-size:16px; padding:13px 26px; border-radius:6px; border:none;}
+  .cta a.btn:hover{background:#EEF1F4;}
+  /* legal */
+  .legal{font-size:13.5px; color:var(--c-muted); line-height:1.6;}
+  .legal b{color:var(--c-body);}
+  footer.sig{padding:32px 0 60px; color:var(--c-muted); font-size:14px;}
+  footer.sig b{color:var(--c-text); font-family:'PT Serif',serif;}
+  /* КП: вердикт-блок, строки-провалы, сводка пробелов */
+  tr.gap td{background:var(--c-redbg);}
+  tr.gain td{background:#EDF4EE;}
+  .verdict .row{display:flex; gap:30px; flex-wrap:wrap; margin-top:10px;}
+  .verdict .row .it .v{font-family:'PT Serif',serif; font-weight:700; color:var(--c-accent); font-size:25px; line-height:1.1;}
+  .verdict .row .it .v.red{color:var(--c-red);}
+  .verdict .row .it .k{font-size:13px; color:var(--c-muted); margin-top:2px;}
+  .gaps{background:var(--c-redbg); border-left:3px solid var(--c-red); padding:18px 22px; margin:20px 0 0; border-radius:0 4px 4px 0;}
+  .gaps h3{color:var(--c-red); margin:0 0 8px;} .gaps ul{margin:0; padding-left:18px;}
+  .gaps li{margin:0 0 7px;} .gaps li:last-child{margin-bottom:0;}
+  .evid{display:grid; grid-template-columns:1fr; gap:18px; margin:16px 0 6px;}
+  .evid figure{margin:0;} .evid img{width:100%; height:auto; display:block; border:1px solid var(--c-hairline); border-radius:6px;}
+  .evid figcaption{font-size:14px; color:var(--c-body); margin-top:8px;} .evid figcaption b{color:var(--c-text);}
+  /* сравнение «лбами»: 2 колонки take/beat + pull-quote + таргет-колонка */
+  .cols2{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:18px 0 0;}
+  .card{border:1px solid var(--c-hairline); border-radius:6px; padding:18px 20px;}
+  .card.take{border-top:3px solid var(--c-amber);} .card.beat{border-top:3px solid var(--c-green);}
+  .card h3{margin:0 0 10px; font-size:16px;} .card ul{margin:0; padding-left:18px;}
+  .card li{margin:0 0 8px; font-size:15px;} .card li:last-child{margin-bottom:0;}
+  .quote{font-family:'PT Serif',serif; font-style:italic; font-size:19px; color:var(--c-text);
+    border-left:3px solid var(--c-accent); padding:6px 0 6px 18px; margin:20px 0 0;}
+  td.t-now{font-weight:700;} td.t-goal{color:var(--c-green); font-weight:700; white-space:nowrap;}
+  .win{color:var(--c-green); font-weight:700;} .lose{color:var(--c-red); font-weight:700;}
+  .gapcol{font-size:13.5px; color:var(--c-body);} .gapcol b{color:var(--c-red);}
+  @media (max-width:680px){
+    .cols2{grid-template-columns:1fr;}
+    body{font-size:16px;} h1{font-size:26px;} h2{font-size:21px;}
+    .kpis{grid-template-columns:1fr 1fr;} .pair{grid-template-columns:1fr;}
+    .mob{grid-template-columns:1fr;} .chip{min-width:0;}
+    ul.check li{flex-direction:column; gap:4px;}
+  }
+
+/* ---- надстройка над каноном ---- */
+.eyebrow{font-size:18px;letter-spacing:.02em;margin:34px 0 12px}
+.tabhead .eyebrow{margin-top:0}
+.tabs{position:sticky;top:0;z-index:20;background:var(--c-bg);border-bottom:1px solid var(--c-rule)}
+.tabs .wrap{display:flex;gap:2px;flex-wrap:wrap;padding:0}
+@media(max-width:900px){.tabs .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}}
+.tabs button{flex:0 0 auto;appearance:none;border:0;background:transparent;cursor:pointer;
+  font-family:'PT Sans',sans-serif;font-size:14px;line-height:1.2;color:var(--c-muted);
+  padding:14px 12px;border-bottom:2px solid transparent;white-space:nowrap}
+.tabs button:hover{color:var(--c-text)}
+.tabs button[aria-selected="true"]{color:var(--c-accent);border-bottom-color:var(--c-accent);font-weight:700}
+.panel[hidden]{display:none}
+.tabhead{padding:26px 0 0}
+.tabhead h2{margin:0 0 4px}
+.tabhead .addr{font-family:'PT Sans',sans-serif;font-size:14px;color:var(--c-muted);margin:0 0 10px}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 6px}
+.links a{font-family:'PT Sans',sans-serif;font-size:13px;text-decoration:none;color:var(--c-accent);
+  border:1px solid var(--c-rule);border-radius:3px;padding:6px 10px}
+.links a:hover{border-color:var(--c-accent)}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:720px){.twocol{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}
+.bullets{margin:8px 0 0;padding:0;list-style:none}
+.bullets li{font-family:'PT Sans',sans-serif;font-size:15px;line-height:1.5;padding:7px 0 7px 16px;
+  border-bottom:1px solid var(--c-hairline);position:relative}
+.bullets li:before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;border-radius:50%;
+  background:var(--c-muted)}
+.bullets li.bad:before{background:var(--c-red)}
+.bullets li.good:before{background:var(--c-green)}
+.bullets li.warn:before{background:var(--c-amber)}
+.pill{display:inline-block;font-family:'PT Sans',sans-serif;font-size:12px;padding:3px 8px;
+  border-radius:3px;background:var(--c-ctx);color:var(--c-body);margin:0 6px 6px 0}
+.pill.bad{background:var(--c-redbg);color:var(--c-red)}
+</style></head><body><header class="hero"><div class="wrap"><p class="eyebrow">Разбор карточек · Нижний Новгород и область</p><h1>Сеть «Аквилио» на Яндекс Картах и ПроДокторов: что видит пациент и что исправить</h1><p class="meta">Нижний Новгород и область · снимок 26 октября 2026 · данные собраны из открытых карточек, без кабинетов площадок</p></div></header><nav class="tabs" role="tablist"><div class="wrap"><button role="tab" aria-selected="true" data-i="0">Сводка</button><button role="tab" aria-selected="false" data-i="1">Варварская, 40а</button><button role="tab" aria-selected="false" data-i="2">Гагарина, 162а</button><button role="tab" aria-selected="false" data-i="3">Коминтерна, 139</button><button role="tab" aria-selected="false" data-i="4">Рокоссовского, 10</button><button role="tab" aria-selected="false" data-i="5">Бурнаковская, 103А</button><button role="tab" aria-selected="false" data-i="6">Павлово, Чапаева, 49</button><button role="tab" aria-selected="false" data-i="7">Заволжье, Пушкина, 8</button><button role="tab" aria-selected="false" data-i="8">Дзержинск, б-р Мира, 4</button><button role="tab" aria-selected="false" data-i="9">Медцентр, Циолковского, 17</button></div></nav><div class="panel" id="p0" role="tabpanel"><section class="wrap tabhead"><h2>Карточки сети на двух площадках: что видит пациент</h2>
+<p class="addr">Снимок 26 октября 2026. 9 карточек сети на Яндекс Картах и ПроДокторов — восемь стоматологий и медцентр.</p></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">1 185</div><div class="lbl">отзывов на Яндекс Картах</div></div>
+<div class="kpi"><div class="big">798</div><div class="lbl">отзывов на ПроДокторов</div></div>
+<div class="kpi"><div class="big">4,0–5,0</div><div class="lbl">рейтинги карточек</div></div>
+<div class="kpi"><div class="big">258</div><div class="lbl">отзывов на Яндексе без ответа клиники</div></div>
+</div>
+<p class="lead-p">Накопленная репутация у сети сильная: 1 185 отзывов и 2 235 оценок на Яндекс Картах, 798 на ПроДокторов, 117 врачей в сети по данным площадки. Лицензия подтверждена на всех девяти карточках ПроДокторов, у всех восьми стоматологий на Яндексе есть знак «Хорошее место 2026» и включены истории.</p>
+<p class="lead-p">Слабое место не в том, что собрано, а в том, что собирается и настраивается сейчас: за последние три месяца девять карточек получили 68 отзывов, 258 отзывов ждут ответа клиники, из них 85 с низкой оценкой.</p></section>
+<section class="wrap"><p class="eyebrow">Что уже хорошо</p><ul class="bullets">
+<li class="good">Лицензия подтверждена на всех девяти карточках ПроДокторов.</li>
+<li class="good">На Яндекс Картах у всех восьми стоматологий знак «Хорошее место 2026» и включены истории.</li>
+<li class="good">Рейтинги держатся высокими на обеих площадках: от 4,0 до 5,0.</li>
+<li class="good">Накопленный объём отзывов большой — 1 185 на Яндекс Картах и 798 на ПроДокторов, это уже работающий актив.</li>
+<li class="good">Отзывы с низкой оценкой на ПроДокторов почти везде отработаны — без ответа единицы.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Что нужно доработать</p><ul class="bullets">
+<li class="bad">Онлайн-записи нет ни на одной карточке ПроДокторов — ни на услуги, ни к врачам (9 из 9). Это самый тяжёлый незанятый блок в ранжировании площадки: до 200 баллов из 730.</li>
+<li class="bad">Клубной записи ПроДокторов нет ни на одной карточке (9 из 9) — ещё 70 баллов.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025 на всех карточках, кроме медцентра. Пациент видит прайс годичной давности, а площадка считает карточку неактуальной.</li>
+<li class="bad">Платного приоритетного размещения на Яндекс Картах нет ни на одной карточке (9 из 9) либо не оформлен раздел акций — либо сбой Яндекса, и он их сейчас не показывает.</li>
+<li class="warn">Видеовизитки клиники нет ни на одной карточке ПроДокторов, видео заполнено у 1 врача из 117 по сети.</li>
+<li class="warn">Акций нет ни на одной карточке ПроДокторов (9 из 9).</li>
+<li class="warn">Телефон на ПроДокторов не указан на карточке Бурнаковская, 103А — с неё пациент позвонить не может. На остальных карточках сети телефон есть.</li>
+<li class="bad">В карточке Яндекс Карт Медцентр, Циолковского, 17 не указан ни один телефон — позвонить из неё нельзя.</li>
+<li class="bad">Сбор отзывов ниже нормы на 8 карточках из 9: ориентир — не меньше 15 новых отзывов в месяц на клинику, за последние 30 дней столько набрала только Варварская, 40а.</li>
+<li class="warn">Услуги в карточках Яндекса описаны коротко: пациент видит первые несколько позиций, и по ним он решает, подходит ли клиника. Названия стоит привести к понятным пациенту формулировкам и добавить описания — их читает поиск.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы: сколько и когда приходили последние</p>
+<p class="lead-p">«Оценка» — это звёзды без текста, «отзыв» — с текстом. Ниже отзывы.</p>
+<div class="tablewrap"><table><thead><tr><th>Клиника</th><th>Яндекс: отзывов</th><th>последний</th><th>за 3 мес.</th><th>без ответа</th><th>ПроДокторов: отзывов</th><th>последний</th></tr></thead><tbody>
+<tr><td>Варварская, 40а</td><td>148</td><td>23 октября</td><td>29</td><td>48</td><td>99</td><td>13 октября</td></tr>
+<tr><td>Гагарина, 162а</td><td>114</td><td>22 октября</td><td>14</td><td>36</td><td>97</td><td>26 сентября</td></tr>
+<tr><td>Медцентр, Циолковского, 17</td><td>318</td><td>9 октября</td><td>11</td><td>28</td><td>97</td><td>17 октября</td></tr>
+<tr><td>Коминтерна, 139</td><td>203</td><td>2 октября</td><td>6</td><td>51</td><td>219</td><td>20 сентября</td></tr>
+<tr><td>Павлово, Чапаева, 49</td><td>79</td><td>10 октября</td><td>3</td><td>20</td><td>54</td><td>2 августа</td></tr>
+<tr><td>Рокоссовского, 10</td><td>121</td><td>17 октября</td><td>2</td><td>29</td><td>98</td><td>22 октября</td></tr>
+<tr><td>Бурнаковская, 103А</td><td>18</td><td>7 сентября</td><td>2</td><td>9</td><td>9</td><td>31 июля</td></tr>
+<tr><td>Дзержинск, б-р Мира, 4</td><td>111</td><td>18 августа</td><td>1</td><td>29</td><td>77</td><td>30 сентября</td></tr>
+<tr><td>Заволжье, Пушкина, 8</td><td>73</td><td class="red">12 июня</td><td class="red">0</td><td>8</td><td>48</td><td>16 июля</td></tr>
+<tr><td><b>Вся сеть</b></td><td><b>1 185</b></td><td>—</td><td><b>68</b></td><td><b>258</b></td><td><b>798</b></td><td>—</td></tr>
+</tbody></table></div>
+<p class="lead-p"><b>Ориентир по сбору — не меньше 15 новых отзывов в месяц на клинику.</b> За последние 30 дней норму выполнила Варварская, 40а — 25 отзывов. Меньше всех собрали: Бурнаковская, 103А — 0, Заволжье, Пушкина, 8 — 0, Дзержинск, б-р Мира, 4 — 0. Разрыв закрывается не рекламой, а привычкой просить отзыв на выдаче — рабочий пример внутри сети уже есть.</p>
+<p class="srcnote">Тексты отзывов не собирались: только дата, оценка и признак ответа клиники.</p></section>
+<section class="wrap"><p class="eyebrow">Что исправить, по порядку</p><ul class="bullets">
+<li class="bad"><b>Включить онлайн-запись на ПроДокторов</b> — на услуги и к врачам, плюс Клубную запись. Это до 270 баллов ранжирования из 730, делается настройками в кабинете и не требует денег.</li>
+<li class="bad"><b>Ответить на отзывы.</b> Ждут ответа 258 отзывов на Яндексе, в том числе 85 с низкой оценкой. Больше всего — Рокоссовского, 10 (24), Дзержинск, б-р Мира, 4 (16), Коминтерна, 139 (15), Гагарина, 162а (13).</li>
+<li class="bad"><b>Вернуть сбор отзывов там, где он остановился:</b> Заволжье, Пушкина, 8 — 136 дней без отзыва, Дзержинск, б-р Мира, 4 — 69 дней без отзыва, Бурнаковская, 103А — 49 дней без отзыва. Рабочий пример внутри сети уже есть — на Варварской за октябрь пришло 19 отзывов.</li>
+<li class="bad"><b>Загрузить на ПроДокторов актуальный прайс</b> — сейчас цены на всех карточках, кроме медцентра, от 02.10.2025. В идеале подключить выгрузку цен из медицинской информационной системы, чтобы прайс обновлялся сам.</li>
+<li class="warn"><b>Дозаполнить карточки:</b> услуги — понятными пациенту названиями и с описаниями, которые читает поиск; фото — до двадцати и больше; особенности отметить все, их текст тоже работает как поисковые слова.</li>
+<li class="warn"><b>Указать телефон в карточке Яндекс Карт Медцентр, Циолковского, 17</b> — сейчас его там нет совсем, и пациент не может позвонить прямо со страницы.</li>
+<li class="warn"><b>Проверить раздел акций на Яндекс Картах</b> — ни на одной карточке акции не показываются; это либо незаполненный раздел, либо сбой на стороне площадки.</li>
+</ul></section></div><div class="panel" id="p1" role="tabpanel" hidden><section class="wrap tabhead"><h2>Варварская, 40а</h2><p class="addr">Нижний Новгород, Варварская улица, 40А</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/1277670856/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/nnovgorod/lpu/65654-akvilio/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,9</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">148</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,8</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">99</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 23 октября (3 дня назад), на ПроДокторов — 13 октября. За три месяца карточка Яндекса получила 29 отзывов; ответ клиники есть у 100 из 148 снятых отзывов. На ПроДокторов из 99 отзывов 48 написаны о клинике и 51 — о конкретных врачах, их на карточке 11.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="good">Отзывы приходят: свежий написан 3 дня назад.</li>
+<li class="good">Темп сбора — 2,26 в неделю (за три месяца 29 отзывов).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 1 из 10.</li>
+<li class="warn">Ответы клиники — у 68% отзывов на Яндексе.</li>
+<li class="bad">На ПроДокторов без ответа отзывов с низкой оценкой: 1.</li>
+<li class="good">Фото на Яндексе: 21.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li>Публичная оценка карточки ПроДокторов — 194–246 из 730 возможных баллов.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>1</td><td class="red">0</td><td>10</td><td>19</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 1 на Яндексе и 1 на ПроДокторов.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p2" role="tabpanel" hidden><section class="wrap tabhead"><h2>Гагарина, 162а</h2><p class="addr">Нижний Новгород, проспект Гагарина, 162А</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/1701202541/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/nnovgorod/lpu/55046-stomatologiya-evrostom-na-gagarina/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,7</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">114</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,4</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">97</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 22 октября (4 дня назад), на ПроДокторов — 26 сентября. За три месяца карточка Яндекса получила 14 отзывов; ответ клиники есть у 78 из 114 снятых отзывов. На ПроДокторов из 97 отзывов 34 написаны о клинике и 63 — о конкретных врачах, их на карточке 13.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="good">Отзывы приходят: свежий написан 4 дня назад.</li>
+<li class="good">Темп сбора — 1,09 в неделю (за три месяца 14 отзывов).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 13 из 27.</li>
+<li class="warn">Ответы клиники — у 68% отзывов на Яндексе.</li>
+<li class="good">Фото на Яндексе: 19.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li class="bad">Карточку на ПроДокторов не обновляли с 2 декабря — больше 10 месяцев.</li>
+<li>Публичная оценка карточки ПроДокторов — 182–234 из 730 возможных баллов.</li>
+<li class="warn">В текстах отзывов заметно выделяются: качество лечения — 12 упоминаний из 52, удаление зубов — 8 упоминаний из 19. Это темы, где пациенты чаще пишут недовольно.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>1</td><td>1</td><td class="red">0</td><td>2</td><td>7</td><td>5</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 13 на Яндексе.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p3" role="tabpanel" hidden><section class="wrap tabhead"><h2>Коминтерна, 139</h2><p class="addr">Нижний Новгород, улица Коминтерна, 139</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/1399158815/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/nnovgorod/lpu/28292-akvus/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,7</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">203</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,7</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">219</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 2 октября (24 дня назад), на ПроДокторов — 20 сентября. За три месяца карточка Яндекса получила 6 отзывов; ответ клиники есть у 152 из 203 снятых отзывов. На ПроДокторов из 219 отзывов 58 написаны о клинике и 42 — о конкретных врачах, их на карточке 23.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="warn">Темп сбора — 0,47 в неделю (за три месяца 6 отзывов).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 15 из 46.</li>
+<li class="warn">Ответы клиники — у 75% отзывов на Яндексе.</li>
+<li class="bad">На ПроДокторов без ответа отзывов с низкой оценкой: 1.</li>
+<li class="good">Фото на Яндексе: 26.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li>Публичная оценка карточки ПроДокторов — 191–243 из 730 возможных баллов.</li>
+<li class="warn">В текстах отзывов заметно выделяются: время ожидания — 14 упоминаний из 25, чистка зубов — 5 упоминаний из 19, реставрация зубов — 6 упоминаний из 12. Это темы, где пациенты чаще пишут недовольно.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>2</td><td>4</td><td>1</td><td>1</td><td>4</td><td>1</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 15 на Яндексе и 1 на ПроДокторов.</li>
+<li>Поднять темп сбора отзывов — сейчас меньше одного в неделю.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p4" role="tabpanel" hidden><section class="wrap tabhead"><h2>Рокоссовского, 10</h2><p class="addr">Нижний Новгород, Советский район, жилой район Кузнечиха, улица Маршала Рокоссовского, 10</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/1397190448/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/nnovgorod/lpu/55045-evrostom/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,5</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">121</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,8</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">98</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 17 октября (9 дней назад), на ПроДокторов — 22 октября. За три месяца карточка Яндекса получила 2 отзыва; ответ клиники есть у 92 из 121 снятых отзывов. На ПроДокторов из 98 отзывов 34 написаны о клинике и 64 — о конкретных врачах, их на карточке 13.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="warn">Темп сбора — 0,16 в неделю (за три месяца 2 отзыва).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 24 из 37.</li>
+<li class="warn">Ответы клиники — у 76% отзывов на Яндексе.</li>
+<li class="warn">Фото на Яндексе всего 11. Норма — не меньше пяти в каждой из четырёх групп: вход, интерьер, оборудование, команда.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li>Публичная оценка карточки ПроДокторов — 194–246 из 730 возможных баллов.</li>
+<li class="warn">В текстах отзывов заметно выделяются: качество лечения — 16 упоминаний из 63, детская стоматология — 9 упоминаний из 34, время ожидания — 11 упоминаний из 23. Это темы, где пациенты чаще пишут недовольно.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>2</td><td class="red">0</td><td class="red">0</td><td class="red">0</td><td class="red">0</td><td>2</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 24 на Яндексе.</li>
+<li>Поднять темп сбора отзывов — сейчас меньше одного в неделю.</li>
+<li>Добавить фото: сейчас 11, нужно 20 и больше по четырём группам.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p5" role="tabpanel" hidden><section class="wrap tabhead"><h2>Бурнаковская, 103А</h2><p class="addr">Нижний Новгород, Бурнаковская улица, 103А</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/160461225193/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/nnovgorod/lpu/112144-stomatologiya-akvilio-na-burnakovskoy/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,8</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">18</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,1</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">9</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 7 сентября (49 дней назад), на ПроДокторов — 31 июля. За три месяца карточка Яндекса получила 2 отзыва; ответ клиники есть у 9 из 18 снятых отзывов. На ПроДокторов из 9 отзывов 1 написаны о клинике и 8 — о конкретных врачах, их на карточке 11.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="warn">Темп сбора — 0,16 в неделю (за три месяца 2 отзыва).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 2 из 2.</li>
+<li class="bad">Ответы клиники — у 50% отзывов на Яндексе.</li>
+<li class="good">Фото на Яндексе: 20.</li>
+<li class="warn">Особенностей отмечено 16 — меньше, чем на других карточках сети. Их текст работает как поисковые слова.</li>
+<li class="warn">Соцсети в карточке Яндекса не указаны (на других карточках сети — Telegram, WhatsApp, Viber, YouTube).</li>
+<li class="warn">Прайс на ПроДокторов — 8 позиций против 26 на остальных карточках сети.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li class="warn">Телефон на карточке ПроДокторов не указан — позвонить со страницы нельзя.</li>
+<li>Публичная оценка карточки ПроДокторов — 123–173 из 730 возможных баллов.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>1</td><td>2</td><td class="red">0</td><td>1</td><td>1</td><td class="red">0</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 2 на Яндексе.</li>
+<li>Вернуть сбор отзывов: карточка молчит 49 дней.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Отметить все особенности в карточке Яндекса (сейчас 16).</li>
+<li>Указать соцсети и мессенджеры в карточке.</li>
+<li>Довести прайс на ПроДокторов до объёма остальных карточек сети.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p6" role="tabpanel" hidden><section class="wrap tabhead"><h2>Павлово, Чапаева, 49</h2><p class="addr">Нижегородская область, Павлово, улица Чапаева, 49</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/173060609798/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/pavlovo/lpu/69193-akvilio/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,7</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">79</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,0</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">54</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 10 октября (16 дней назад), на ПроДокторов — 2 августа. За три месяца карточка Яндекса получила 3 отзыва; ответ клиники есть у 59 из 79 снятых отзывов. На ПроДокторов из 54 отзывов 29 написаны о клинике и 25 — о конкретных врачах, их на карточке 6.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="warn">Темп сбора — 0,23 в неделю (за три месяца 3 отзыва).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 7 из 14.</li>
+<li class="warn">Ответы клиники — у 75% отзывов на Яндексе.</li>
+<li class="good">Фото на Яндексе: 17.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li class="bad">Карточку на ПроДокторов не обновляли с 24 ноября — больше 11 месяцев.</li>
+<li>Публичная оценка карточки ПроДокторов — 170–222 из 730 возможных баллов.</li>
+<li class="warn">В текстах отзывов заметно выделяются: качество лечения — 9 упоминаний из 35, детская стоматология — 7 упоминаний из 22. Это темы, где пациенты чаще пишут недовольно.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>6</td><td>1</td><td class="red">0</td><td>1</td><td class="red">0</td><td>2</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 7 на Яндексе.</li>
+<li>Поднять темп сбора отзывов — сейчас меньше одного в неделю.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p7" role="tabpanel" hidden><section class="wrap tabhead"><h2>Заволжье, Пушкина, 8</h2><p class="addr">Нижегородская область, Городецкий муниципальный округ, Заволжье, улица Пушкина, 8</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/136245770803/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/zavolzhe/lpu/69194-akvilio/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,8</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">73</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,5</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">48</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 12 июня (136 дней назад), на ПроДокторов — 16 июля. За три месяца карточка Яндекса получила 0 отзывов; ответ клиники есть у 65 из 73 снятых отзывов. На ПроДокторов из 48 отзывов 34 написаны о клинике и 14 — о конкретных врачах, их на карточке 9.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="bad">Карточка Яндекса стоит: последний отзыв 136 дней назад.</li>
+<li class="warn">Темп сбора — 0,0 в неделю (за три месяца 0 отзывов).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 3 из 8.</li>
+<li class="good">Ответы клиники — у 89% отзывов на Яндексе.</li>
+<li class="warn">Фото на Яндексе всего 11. Норма — не меньше пяти в каждой из четырёх групп: вход, интерьер, оборудование, команда.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li>Публичная оценка карточки ПроДокторов — 185–237 из 730 возможных баллов.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td class="red">0</td><td>1</td><td class="red">0</td><td class="red">0</td><td class="red">0</td><td class="red">0</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 3 на Яндексе.</li>
+<li>Вернуть сбор отзывов: карточка молчит 136 дней.</li>
+<li>Добавить фото: сейчас 11, нужно 20 и больше по четырём группам.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p8" role="tabpanel" hidden><section class="wrap tabhead"><h2>Дзержинск, б-р Мира, 4</h2><p class="addr">Нижегородская область, Дзержинск, проспект Ленинского Комсомола, 51</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/46264340850/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/dzerzhinsk/lpu/51339-stomatologiya-akvilio-ranee-dlya-vseh/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">4,6</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">111</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">5,0</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">77</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 18 августа (69 дней назад), на ПроДокторов — 30 сентября. За три месяца карточка Яндекса получила 1 отзыв; ответ клиники есть у 82 из 111 снятых отзывов. На ПроДокторов из 77 отзывов 26 написаны о клинике и 51 — о конкретных врачах, их на карточке 16.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="bad">Карточка Яндекса стоит: последний отзыв 69 дней назад.</li>
+<li class="warn">Темп сбора — 0,08 в неделю (за три месяца 1 отзыв).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 16 из 23.</li>
+<li class="warn">Ответы клиники — у 74% отзывов на Яндексе.</li>
+<li class="good">Фото на Яндексе: 18.</li>
+<li class="bad">Цены на ПроДокторов не обновлялись со 02.10.2025.</li>
+<li>Публичная оценка карточки ПроДокторов — 200–252 из 730 возможных баллов.</li>
+<li class="warn">В текстах отзывов заметно выделяются: качество лечения — 16 упоминаний из 71, детская стоматология — 7 упоминаний из 24, время ожидания — 7 упоминаний из 19. Это темы, где пациенты чаще пишут недовольно.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>4</td><td class="red">0</td><td>1</td><td>1</td><td class="red">0</td><td class="red">0</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 16 на Яндексе.</li>
+<li>Вернуть сбор отзывов: карточка молчит 69 дней.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Загрузить актуальные цены на ПроДокторов (сейчас от 02.10.2025), в идеале — выгрузкой из медицинской информационной системы.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><div class="panel" id="p9" role="tabpanel" hidden><section class="wrap tabhead"><h2>Медцентр, Циолковского, 17</h2><p class="addr">Нижний Новгород, улица Циолковского, 17</p>
+<div class="links"><a href="https://yandex.ru/maps/org/akvilio/171460860073/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a><a href="https://prodoctorov.ru/nnovgorod/lpu/98165-stomatologiya-akvilio-na-ciolkovskogo/" target="_blank" rel="noopener">Карточка на ПроДокторов</a></div></section>
+<section class="wrap"><div class="kpis">
+<div class="kpi"><div class="big">5,0</div><div class="lbl">рейтинг на Яндексе</div></div>
+<div class="kpi"><div class="big">318</div><div class="lbl">отзывов на Яндексе</div></div>
+<div class="kpi"><div class="big">4,9</div><div class="lbl">рейтинг на ПроДокторов</div></div>
+<div class="kpi"><div class="big">97</div><div class="lbl">отзывов на ПроДокторов</div></div>
+</div>
+<p class="lead-p">Последний отзыв на Яндексе — 9 октября (17 дней назад), на ПроДокторов — 17 октября. За три месяца карточка Яндекса получила 11 отзывов; ответ клиники есть у 288 из 316 снятых отзывов. На ПроДокторов из 97 отзывов 26 написаны о клинике и 71 — о конкретных врачах, их на карточке 31.</p>
+<p><span class="pill bad">онлайн-записи на ПроДокторов нет</span><span class="pill bad">Клубной записи нет</span><span class="pill bad">платного размещения на Яндексе нет</span><span class="pill ">видеовизитки нет</span><span class="pill ">акций нет</span></p>
+<p class="srcnote">Серым — то, что одинаково на всех карточках сети, подробнее на вкладке «Сводка». Ниже — только то, что относится к этой точке.</p></section>
+<section class="wrap"><p class="eyebrow">Нюансы этой точки</p><ul class="bullets">
+<li class="warn">Темп сбора — 0,86 в неделю (за три месяца 11 отзывов).</li>
+<li class="bad">Отзывов с низкой оценкой без ответа: 4 из 9.</li>
+<li class="good">Ответы клиники — у 91% отзывов на Яндексе.</li>
+<li class="good">Фото на Яндексе: 26.</li>
+<li class="bad">В карточке Яндекса не указан ни один телефон — позвонить из неё нельзя.</li>
+<li class="good">Прайс на ПроДокторов самый полный в сети — 964 позиций.</li>
+<li class="good">Цены на ПроДокторов поддерживаются в актуальном виде.</li>
+<li>Публичная оценка карточки ПроДокторов — 293–343 из 730 возможных баллов.</li>
+</ul></section>
+<section class="wrap"><p class="eyebrow">Отзывы на Яндексе по месяцам</p>
+<div class="tablewrap"><table><thead><tr><th>май</th><th>июнь</th><th>июль</th><th>август</th><th>сентябрь</th><th>октябрь</th></tr></thead><tbody><tr><td>3</td><td>6</td><td>1</td><td>4</td><td>6</td><td>1</td></tr></tbody></table></div>
+</section>
+<section class="wrap"><p class="eyebrow">Что сделать по этой точке</p><ul class="bullets">
+<li>Ответить на отзывы с низкой оценкой: 4 на Яндексе.</li>
+<li>Поднять темп сбора отзывов — сейчас меньше одного в неделю.</li>
+<li>Привести названия услуг к понятным пациенту формулировкам и добавить к ним описания — их читает поиск.</li>
+<li>Указать телефон в карточке Яндекса.</li>
+<li>Включить онлайн-запись и Клубную запись на ПроДокторов — это общий пробел всей сети.</li>
+</ul></section></div><section class="wrap"><div class="ctx"><p class="lead-p"><b>Как читать эти числа.</b> Всё собрано из открытых карточек на 26 октября 2026: рейтинг, число оценок и отзывов, дата последнего отзыва, наличие ответа клиники, заполненность разделов. Тексты отзывов не собирались. «Оценка» — звёзды без текста, «отзыв» — с текстом, это разные числа.</p><p class="lead-p">Чего в этих числах нет: переходов и маршрутов с карт, успешности записи, ставок рекламы и звонков — они видны только в кабинетах площадок. Балл ПроДокторов приведён коридором: часть факторов снаружи не измеряется. Телефон на карточках ПроДокторов сейчас не показывается ни у одной клиники сети — почему именно, видно только в кабинете.</p></div></section><footer class="wrap legal"><p>Подготовлено для сети «Аквилио». Снимок 26 октября 2026.</p></footer><script>document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){var i=b.dataset.i;document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected', x===b?'true':'false')});document.querySelectorAll('.panel').forEach(function(p){p.hidden=(p.id!=='p'+i)});location.hash='t'+i;window.scrollTo({top:0,behavior:'instant'})})});(function(){var m=(location.hash||'').match(/^#t(\d+)$/);if(!m)return;var b=document.querySelector('.tabs button[data-i="'+m[1]+'"]');if(b)b.click()})();</script></body></html>
